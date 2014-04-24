@@ -32,7 +32,7 @@ class Ab < Formula
     ENV['LTFLAGS'] = '--tag CC'
     system "./configure", "--prefix=#{prefix}", "--disable-debug",
                           "--disable-dependency-tracking",
-                          "--with-apr=#{Formula["homebrew/dupes/apr"].opt_prefix}",
+                          "--with-apr=/opt/boxen/homebrew/opt/apr",
                           "--with-apr-util=#{Formula["homebrew/dupes/apr-util"].opt_prefix}"
 
     cd 'support' do
